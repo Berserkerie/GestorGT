@@ -1,0 +1,128 @@
+/*========================= RESET BASICO ==========================*/
+/* Esto elimina margenes y rellenos por defecto del navegadro y mejora el control del diseño*/
+* {
+    margin: 0; /*quita el margen externo de todos los elementos */
+    padding: 0; /*quita el relleno interno de todos los elemntos */
+    box-sizing: border-box; /*hace que el tamaño total de los elementos incluya padding y border */
+}
+
+/*========================= CONTENEDOR GENERAL =======================*/
+.container {
+    width: 80%;
+    margin: 0 auto; /*centra horizontalmente*/
+}
+
+/*========================= ESTILO GENERAL DEL CUERPO =====================*/
+body {
+    font-family: arial, sans-serif;
+    background-image: url("/home/enrique/Documentos/DOCUMENTOS IMPORTANTES/PROYECTOS/GESTIONgt/IMG/fondo.png"); /* cambia por el nombre real del archivo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* hace que el fondo no se mueva al hacer scroll */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/*========================= CABECERA (HEADER) ================================*/
+header {
+    background-color: #003366; /*fondo azul oscuro*/
+    color: white; /* texto blanco sobre el fondo azul*/
+    text-align: center; /*centra el texto del header*/
+}
+
+header h1 {
+    font-size: 2em; /*aumenta el titulo principal*/
+}
+
+/*========================== NAVEGACION (MENU) =====================*/
+nav ul {
+    list-style: none; /*quita las viñetas*/
+    display: flex; /*los elementos en línea*/
+    flex-wrap: nowrap; /*todos en una sola línea */
+    justify-content: center; /*centrar menú horizontalmente */
+    padding: 10px 0;
+    background-color: transparent; /*sin fondo */
+}
+
+nav li {
+    margin: 0 15px; /*espacio entre los enlaces*/
+}
+
+nav a {
+    color: white; /* texto blanco */
+    text-decoration: none; /* sin subrayado */
+    font-weight: normal;
+    padding: 0;
+    font-size: 1em;
+    transition: color 0.3s ease; /* transición suave para el color */
+}
+
+nav a:hover {
+    /* Cambia a un color azul claro al pasar el ratón */
+    color: #aaddff;
+    cursor: pointer;
+    /* No hay subrayado ni borde */
+}
+
+
+
+/*================================CONTENIDO PRINCIPAL==============================*/
+main {
+    background-color: white; /*fondo blanco para que el contenido destaque*/
+    padding: 20px; /*espacio interno*/
+    border-radius: 8px; /*bordes redondeados del cuadro principal*/
+    margin-top: 20px; /*espacio arriba del contenido*/
+    max-width: 800px; /*ancho maximo para que no se vea extendido*/
+    margin-left: auto; /*centra horizontal*/
+    margin-right: auto;
+}
+
+/*============================PIE DE PAGINA (FOOTER)==========================*/
+footer {
+    text-align: center; /*centra el texto del pie de pagina*/
+    margin-top: 30px; /*espacio arriba del pie de pagina*/
+    padding: 15px; /*espacio interno*/
+    background-color: #003366; /*mismo color que la cabecera para mantener coherencia*/
+    color: white; /*texto blanco*/
+    border-radius: 4px; /*bordes ligeramente redondeados*/
+}
+
+/*================================RESPONSIVE - celulares y tablets ============================*/
+/*este bloque se activa cuando el ancho de pantalla es de 768 o menos */
+/*========== RESPONSIVE: tablets y móviles ==========*/
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px; /* menos espacio para pantallas chicas */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* permite que el menú se baje a varias líneas */
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    nav li {
+        margin: 5px 10px; /* menos espacio entre enlaces */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* texto más pequeño en encabezado */
+    }
+
+    main {
+        padding: 15px;
+        max-width: 100%; /* usa todo el ancho posible */
+        margin: 10px auto;
+        border-radius: 0; /* bordes sin redondear en móvil para más espacio */
+    }
+
+    footer {
+        font-size: 0.9em; /* texto más pequeño en pie de página */
+        padding: 10px;
+        border-radius: 0;
+    }
+}
+
