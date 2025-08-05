@@ -15,7 +15,7 @@
 /*========================= ESTILO GENERAL DEL CUERPO =====================*/
 body {
     font-family: arial, sans-serif;
-    background-image: url("/home/enrique/Documentos/DOCUMENTOS IMPORTANTES/PROYECTOS/GESTIONgt/IMG/fondo.png"); /* cambia por el nombre real del archivo */
+   background-image: url("IMG/fondo.png"); /* cambia por el nombre real del archivo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
