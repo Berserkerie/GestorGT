@@ -20,20 +20,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* hace que el fondo no se mueva al hacer scroll */
-    color: #333;
+    color: #000000;
     line-height: 1.6;
     padding: 20px;
 }
 
 /*========================= CABECERA (HEADER) ================================*/
 header {
-    background-color: #003366; /*fondo azul oscuro*/
-    color: white; /* texto blanco sobre el fondo azul*/
-    text-align: center; /*centra el texto del header*/
+    background-color: #071e91ad; /*color fondo*/
+    color: #ffffff; /* texto gris oscuro */
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 70px 0;
 }
 
 header h1 {
-    font-size: 2em; /*aumenta el titulo principal*/
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*========================== NAVEGACION (MENU) =====================*/
@@ -51,9 +54,9 @@ nav li {
 }
 
 nav a {
-    color: white; /* texto blanco */
+    color: #e09d9d; /* texto blanco */
     text-decoration: none; /* sin subrayado */
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     font-size: 1em;
     transition: color 0.3s ease; /* transición suave para el color */
@@ -61,7 +64,7 @@ nav a {
 
 nav a:hover {
     /* Cambia a un color azul claro al pasar el ratón */
-    color: #aaddff;
+    color: #ffffff;
     cursor: pointer;
     /* No hay subrayado ni borde */
 }
@@ -70,9 +73,9 @@ nav a:hover {
 
 /*================================CONTENIDO PRINCIPAL==============================*/
 main {
-    background-color: white; /*fondo blanco para que el contenido destaque*/
+    background-color: rgba(255, 255, 255, 0.466); /*fondo blanco para que el contenido destaque*/
     padding: 20px; /*espacio interno*/
-    border-radius: 8px; /*bordes redondeados del cuadro principal*/
+    border-radius: 50px 0; /*bordes redondeados del cuadro principal*/
     margin-top: 20px; /*espacio arriba del contenido*/
     max-width: 800px; /*ancho maximo para que no se vea extendido*/
     margin-left: auto; /*centra horizontal*/
@@ -84,9 +87,9 @@ footer {
     text-align: center; /*centra el texto del pie de pagina*/
     margin-top: 30px; /*espacio arriba del pie de pagina*/
     padding: 15px; /*espacio interno*/
-    background-color: #003366; /*mismo color que la cabecera para mantener coherencia*/
-    color: white; /*texto blanco*/
-    border-radius: 4px; /*bordes ligeramente redondeados*/
+    background-color: #071e91ad;; /*mismo color que la cabecera para mantener coherencia*/
+    color: #ffffff; /*texto blanco*/
+    border-radius: 40px 0; /*bordes ligeramente redondeados*/
 }
 
 /*================================RESPONSIVE - celulares y tablets ============================*/

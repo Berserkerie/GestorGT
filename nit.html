@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GESTOR GT - Pagina Principal</title>
+    <link rel="stylesheet" href="/home/enrique/Documentos/DOCUMENTOS IMPORTANTES/PROYECTOS/GESTIONgt/estilo.css" />
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <!--el comando <header> es la cabecera de la pagina, normalmente contiene el logo y menu-->
+            <h1>Gestion NIT</h1>
+            <!--titulo principal de la pagina-->
+            <nav>
+                <!--<nav> se usa para agrupar el menu de navegacion-->
+                <ul id="menu">
+                    <!--<ul> crea una lista sin orden (viñetas)-->
+                    <!--<li> es un item de la lista; <a> es un enlace que lleva a otra pagina-->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="guias/nit.html">crear NIT</a></li>
+                    <li><a href="guias/nit.html">actualizar NIT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--<main> contiene el contenido principal de la pagina-->
+        <main>
+            <!--<section> agrupa un bloque de contenido relacionado-->
+            <section>
+                <p>
+                             <h2>📄 Obtener tu NIT por primera vez</h2>
+                <ol>
+                    <li>Ingresa al sitio oficial de la SAT: 
+                        <a href="https://portal.sat.gob.gt" target="_blank">portal.sat.gob.gt</a>
+                    </li>
+                    <li>Selecciona la opción <strong>"Inscripción de NIT"</strong>.</li>
+                    <li>Completa el formulario con tus datos personales.</li>
+                    <li>Adjunta tus documentos escaneados.</li>
+                    <li>Confirma la solicitud y guarda el comprobante.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>🔄 Actualizar tu NIT</h2>
+                <ol>
+                    <li>Accede al portal de la SAT.</li>
+                    <li>Inicia sesión con tu usuario y contraseña.</li>
+                    <li>En el menú, selecciona <strong>"Actualización de datos"</strong>.</li>
+                    <li>Modifica la información que desees actualizar.</li>
+                    <li>Guarda los cambios y descarga el comprobante.</li>
+                </ol>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <!--<footer> es el pie de pagina, suele tener derechos, enlaces, etc.-->
+            <p>Gestor GT &copy; 2025</p>
+        </footer>
+    </div>
+    <script scr="menu.js"></script>
 </body>
 </html>
